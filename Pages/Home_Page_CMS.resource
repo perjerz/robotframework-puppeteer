@@ -1,5 +1,5 @@
 *** Settings ***
-Library    SeleniumLibrary    plugins=SeleniumMouseExtensions
+Library    PuppeteerLibrary
 
 *** Variables ***
 ${Login_Test.URL}   https://cms.more-commerce.com/login-test
