@@ -632,6 +632,21 @@
 </arguments>
 <doc>&lt;p&gt;Mouse over the element.&lt;/p&gt;</doc>
 </kw>
+
+<kw name="Mouse To Top Center Of Element">
+<arguments>
+<arg>locator</arg>
+</arguments>
+<doc>&lt;p&gt;Mouse to on top center of the element.&lt;/p&gt;</doc>
+</kw>
+<kw name="Mouse Move">
+<arguments>
+<arg>x</arg>
+<arg>y</arg>
+</arguments>
+<doc>&lt;p&gt;Move mouse to position x, y.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Limitation&lt;/b&gt; Drag event only support for css / id locator. Not support for xpath locator or chain locator.&lt;/p&gt;</doc>
+</kw>
 <kw name="Mouse Up">
 <arguments>
 </arguments>

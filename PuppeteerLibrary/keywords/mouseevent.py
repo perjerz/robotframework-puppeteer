@@ -24,6 +24,12 @@ class MouseEventKeywords(LibraryComponent):
         """
         self.info(f"Mouse down '{locator}'.")
         return self.loop.run_until_complete(self.get_async_keyword_group().mouse_down(locator))
+    @keyword
+    def mouse_to_top_center_of_element(self, locator):
+        """Mouse to top center of the element.
+        """
+        self.info(f"Mouse to top center of element '{locator}'.")
+        return self.loop.run_until_complete(self.get_async_keyword_group().mouse_to_top_center_of_element(locator))
 
     @keyword
     def mouse_up(self):

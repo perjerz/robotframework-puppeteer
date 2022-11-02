@@ -21,7 +21,6 @@ ${Spinner}   css=svg.animate-spin
 *** Keywords ***
 
 move mouse up if not in dropzone
-  Mouse Move    x    y
   Element Should Be Visible    locator
 
 drag and drop
@@ -29,6 +28,7 @@ drag and drop
     Mouse Down    ${source}
     Mouse Over  ${destination}
     Mouse Over  ${destination}
+    Mouse To Top Center Of Element   ${destination}
     Sleep   1
     Wait Until Keyword Succeeds   10   1000  Element Should Not Be Visible     ${Spinner}
     Mouse Up
